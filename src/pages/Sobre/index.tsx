@@ -1,4 +1,11 @@
+import Card from "../../components/Card";
 import React from "react";
+
+import Campeao from '../../assets/1Lugar.jpg';
+import Segundo from '../../assets/2Lugar.jpg';
+import Terceiro from '../../assets/3Lugar.jpg';
+
+import Rods from '../../assets/Rods.jpeg';
 
 function Sobre() {
  return(
@@ -35,6 +42,19 @@ function Sobre() {
  <h1 className="text-center font-semibold mb-8 text-2xl text-test underline decoration-primary mt-8">
   Premios
  </h1>
+
+ <div className="flex">
+ <Card img={Campeao} title="Chopp Haineken" description="O time campeão vai levar um Chopp Haineken 5 Litros" />
+ <Card img={Segundo} title="2 Fardos de Budweiser" description="O segundo colocado vai levar dois fardos de Budweiser contendo 6 latas cada" />
+ <Card img={Terceiro} title="Fardinho Puro Malte" description="O terceiro colocado vai levar um fardo de Brahma Puro Malte" />
+ </div>
+
+ <h1 className="text-center font-semibold mb-8 text-2xl text-test underline decoration-primary mt-8">
+  Sorteios
+ </h1>
+ <div>
+ <Card img={Rods} title="Rod's" description="Sorteio de um Combo Lanche, batata, coca entre os jogadores" />
+ </div>
 
  </div>
  );

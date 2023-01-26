@@ -15,6 +15,7 @@ module.exports = {
       'primary': '#3C9EA5',
       'navbar': '#2B2B2B',
       'test': '#edf0f1',
+      'cinza': '#63686e',
     },
     extend: {},
   },
