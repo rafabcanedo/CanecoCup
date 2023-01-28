@@ -5,7 +5,7 @@ import Logo from '../../assets/CanecoHome.jpg';
 
 function Home() {
  return(
- <>
+ <div id="home">
  <div className="justify-center pt-20 p-20">
  <div className="p-10">
  <h2 className="text-test text-center font-semibold text-5xl py-2">Seja bem vindo ao</h2>
@@ -21,7 +21,7 @@ function Home() {
   <Image src={Logo} alt="Logo Caneco Cup Home" className="rounded-full" />
  </div>
  </div>
- </>
+ </div>
  );
 }
 

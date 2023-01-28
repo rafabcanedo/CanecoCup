@@ -9,7 +9,7 @@ import Rods from '../../assets/Rods.jpeg';
 
 function Sobre() {
  return(
- <div>
+ <div id="sobre">
  <h1 className="text-center font-bold mb-8 text-3xl text-test underline decoration-primary">
   Sobre o Campeonato
  </h1>

@@ -1,10 +1,9 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import Navigation from '@/components/Navigtion';
 import './globals.css';
 
 import Logo from '../assets/CanecoLogo.jpg';
 import Footer from '../assets/LogoFooter.jpg';
-import { Button } from '../components/Button';
 
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
 
@@ -21,37 +20,12 @@ export default function RootLayout({
       */}
       <head />
       <body className="bg-background">
-       <nav className="flex items-center justify-between h-20 bg-navbar px-8 py-4">
-        <div>
-          <Image src={Logo} alt="Logo CanecoCup" className="rounded-full w-16 h-16 cursor-pointer" />
-        </div>
-        <ul className="flex min-w-fit p-5">
-          <li className="text-xl font-semibold text-test hover:underline decoration-primary mr-6">
-            <Link href="#">
-             Home
-            </Link>
-          </li>
-
-          <li className="text-xl font-semibold text-test hover:underline decoration-primary mr-6">
-            <Link href="#">
-             Sobre
-            </Link>
-          </li>
-
-          <li className="text-xl font-semibold text-test hover:underline decoration-primary mr-6">
-            <Link href="#">
-             Inscrição
-            </Link>
-          </li>
-        </ul>
-        <div>
-         <Button title="Contato" />
-        </div>
-       </nav>
+      
+      <Navigation />
         
         {children}
 
-        <footer className="mt-16 p-16 bg-navbar relative text-test left-0 w-full">
+       <footer className="mt-16 p-16 bg-navbar relative text-test left-0 w-full">
          <div className="w-3/4 m-8 flex justify-between items-center">
           <div className="flex flex-col justify-center items-center">
             <Image src={Footer} alt="Logo Footer" className="cursor-pointer" />
@@ -87,6 +61,6 @@ export default function RootLayout({
          </div>
         </footer>
       </body>
-    </html>
+    </html> 
   )
 }
