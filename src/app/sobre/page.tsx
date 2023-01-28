@@ -43,7 +43,7 @@ function Sobre() {
   Premios
  </h1>
 
- <div className="flex">
+ <div className="flex justify-center">
  <Card img={Campeao} title="Chopp Haineken" description="O time campeão vai levar um Chopp Haineken 5 Litros" />
  <Card img={Segundo} title="2 Fardos de Budweiser" description="O segundo colocado vai levar dois fardos de Budweiser contendo 6 latas cada" />
  <Card img={Terceiro} title="Fardinho Puro Malte" description="O terceiro colocado vai levar um fardo de Brahma Puro Malte" />
