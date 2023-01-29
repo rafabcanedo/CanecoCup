@@ -8,7 +8,7 @@ import { Form } from "../../components/Form";
 function Cadastro() {
  return(
  <div id="cadastro">
-  <h1 className="text-center font-bold mb-8 text-3xl text-test underline decoration-primary">Inscrição</h1>
+  <h1 className="text-center font-bold mb-8 text-3xl text-test underline decoration-primary mt-6">Inscrição</h1>
 
    <div className="flex justify-center text-test font-medium text-lg py-2">
     <span>1- Clique no botão “Cadastrar” para abrir a aba de Cadastro</span>
@@ -19,6 +19,7 @@ function Cadastro() {
    <div className="flex justify-center text-test font-medium text-lg py-2">
     <span>3- Realize o Pix de R$ 10 reais para confirmar o seu cadastro</span>
    </div>
+   <span className="text-test items-center justify-center flex">(Pagamento da Inscrição apenas via Pix)</span>
 
 
   <div className="text-center justify-center p-10">
@@ -48,16 +49,16 @@ function Cadastro() {
         </Dialog.Trigger>
 
         <Dialog.Portal>
-          <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0"/>
+          <Dialog.Overlay className="w-screen h-screen bg-focus fixed inset-0"/>
 
-          <Dialog.Content className="absolute p-10 bg-zinc-900 rounded-2xl w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <Dialog.Content className="absolute p-10 bg-transparent rounded-2xl w-full max-w-md top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 
-         <Dialog.Close className="absolute right-6 top-6 text-zinc-400 hover:text-zinc-200">
+         <Dialog.Close className="absolute right-6 top-6 text-test hover:text-white">
           <FiX size={24} arial-label="Fechar" />
          </Dialog.Close>
 
-         <Dialog.Title className="text-3xl leading-tight font-extrabold">
-          Nova Transação
+         <Dialog.Title className="text-3xl leading-tight font-extrabold text-test">
+          Sua Inscrição
          </Dialog.Title>
 
          <Form />

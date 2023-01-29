@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../assets/CanecoLogo.jpg';
 
-import { Button } from '../components/Button';
+import { Button } from './Button';
 
 const Navigation = () => {
  return(

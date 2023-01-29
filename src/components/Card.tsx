@@ -8,7 +8,7 @@ type CardProps = {
 
 function Card({ title, description, img= '' }: CardProps) {
  return(
-  <div className="w-56 m-w-[200px] border-2 border-test rounded-lg flex flex-col shadow-lg">
+  <div className="w-56 m-w-[200px] border-2 border-cinza rounded-lg flex flex-col shadow-lg">
    <div className="w-full h-32 m-w-[100%] bg-[#ddd]">
     <Image src={img} alt="fotos premios" className="w-full h-full"/>
    </div>

@@ -1,7 +1,6 @@
 import './globals.css';
 import Image from 'next/image';
-import Navigation from '@/components/Navigtion';
-import { AnimatePresence } from 'framer-motion';
+import Navigation from '@/components/Navigation';
 
 import Logo from '../assets/CanecoLogo.jpg';
 import Footer from '../assets/LogoFooter.jpg';
