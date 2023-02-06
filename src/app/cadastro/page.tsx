@@ -8,7 +8,7 @@ import { Form } from "../../components/Form";
 function Cadastro() {
  return(
  <div id="cadastro">
-  <h1 className="text-center font-bold mb-8 text-3xl text-test underline decoration-primary mt-6">Inscrição</h1>
+  <h1 className="text-center font-bold mb-8 text-3xl text-test underline decoration-primary mt-28">Inscrição</h1>
 
    <div className="flex justify-center text-test font-medium text-lg py-2">
     <span>1- Clique no botão “Cadastrar” para abrir a aba de Cadastro</span>
@@ -19,7 +19,7 @@ function Cadastro() {
    <div className="flex justify-center text-test font-medium text-lg py-2">
     <span>3- Realize o Pix de R$ 10 reais para confirmar o seu cadastro</span>
    </div>
-   <span className="text-test items-center justify-center flex">(Pagamento da Inscrição apenas via Pix)</span>
+   <span className="text-test items-center justify-center flex text-lg gap-2">(Pagamento da Inscrição <span className="text-primary font-bold text-xl">apenas</span> via Pix)</span>
 
 
   <div className="text-center justify-center p-10">
@@ -39,7 +39,6 @@ function Cadastro() {
   </div>
 
   <div className="text-center justify-center p-14">
-
 
   <Dialog.Root>
         <Dialog.Trigger
@@ -65,6 +64,7 @@ function Cadastro() {
           </Dialog.Content>
         </Dialog.Portal>
       </Dialog.Root>
+
   </div>
  </div>
  );

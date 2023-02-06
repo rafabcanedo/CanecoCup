@@ -15,7 +15,7 @@ import Rods from '../../assets/Rods.jpeg';
 function Sobre() {
  return(
  <div id="sobre">
- <h1 className="text-center font-bold mb-8 text-3xl text-test underline decoration-primary mt-6">
+ <h1 className="text-center font-bold mb-8 text-3xl text-test underline decoration-primary mt-28">
   Sobre os Jogos
  </h1>
 
@@ -26,7 +26,7 @@ function Sobre() {
   para esse início é ser pontos corridos, 2 rodadas para cada grupo. <br />
  </span>
 
- <span className="text-test font-semibold text-xl">
+ <span className="text-test font-semibold text-xl md:text-xl max-w-lg mx-auto">
   Após essa fase inicial, os dois últimos colocados serão <br />
   desclasificados indo assim para a Semi Final com os 4 times <br />
   restantes. Após acabar a Semi Final, vamos para a disputa de <br />
@@ -42,7 +42,7 @@ function Sobre() {
   Premios
  </h1>
 
- <div className=" flex justify-center gap-16">
+ <div className=" flex justify-center gap-16 lg:flex gap-10">
   <span className="text-test font-semibold mb-8 text-2xl underline decoration-primary mt-6">1º Lugar</span>
   <span className="text-test font-semibold mb-8 text-2xl underline decoration-primary mt-6">2º Lugar</span>
   <span className="text-test font-semibold mb-8 text-2xl underline decoration-primary mt-6">3º Lugar</span>

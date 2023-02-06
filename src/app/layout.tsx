@@ -1,4 +1,6 @@
+"use client"
 import './globals.css';
+import { ChakraProvider } from '@chakra-ui/react';
 import Image from 'next/image';
 import Navigation from '@/components/Navigation';
 
@@ -6,6 +8,7 @@ import Logo from '../assets/CanecoLogo.jpg';
 import Footer from '../assets/LogoFooter.jpg';
 
 import { FiGithub, FiInstagram, FiLinkedin } from "react-icons/fi";
+import { Toaster } from 'react-hot-toast';
 
 export default function RootLayout({
   children,
@@ -22,8 +25,11 @@ export default function RootLayout({
       <body className="bg-background">
       
       <Navigation />
-        
+
+        <ChakraProvider>
+        <Toaster position="bottom-right" />
         {children}
+        </ChakraProvider>
 
        <footer className="mt-16 p-16 bg-navbar relative text-test left-0 w-full">
          <div className="w-3/4 m-8 flex justify-between items-center">
